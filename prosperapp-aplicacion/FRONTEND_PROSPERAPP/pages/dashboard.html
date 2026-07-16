@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ProsperApp - Dashboard</title>
+  <link rel="stylesheet" href="../css/estilos.css">
+</head>
+<body>
+
+  <header class="cabecera-app">
+    <h1>ProsperApp</h1>
+    <div>
+      <span id="nombreUsuario"></span>
+      &nbsp;|&nbsp;
+      <a href="#" id="cerrarSesion">Cerrar sesion</a>
+    </div>
+  </header>
+
+  <div class="envoltura">
+    <nav class="menu-lateral">
+      <a href="dashboard.html">Inicio</a>
+      <a href="proyectos.html">Proyectos</a>
+      <a href="secciones.html">Secciones</a>
+      <a href="funcionalidades.html">Funcionalidades</a>
+      <a href="subtareas.html">Subtareas</a>
+      <a href="notas.html">Notas de diseno</a>
+      <a href="decisiones.html">Decisiones tecnicas</a>
+      <a href="descripciones.html">Descripciones</a>
+      <a href="fragmentos.html">Fragmentos de codigo</a>
+      <a href="usuarios.html">Mi perfil</a>
+    </nav>
+
+    <main class="contenido-principal">
+      <h2>Dashboard</h2>
+      <p>Bienvenido a ProsperApp. Aqui puedes ver tus proyectos.</p>
+
+      <h3>Mis proyectos</h3>
+      <div class="tabla-scroll">
+        <table>
+          <thead>
+            <tr>
+              <th>ID</th>
+              <th>Nombre</th>
+              <th>Estado</th>
+              <th>Fecha de creacion</th>
+              <th>Acciones</th>
+            </tr>
+          </thead>
+          <tbody id="cuerpoTablaProyectos">
+            <tr><td colspan="5">Cargando...</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <a href="proyectos.html" class="boton">Nuevo proyecto</a>
+    </main>
+  </div>
+
+  <footer class="pie-pagina">
+    <p>&copy; 2026 ProsperApp - Proyecto academico Universidad del Valle</p>
+  </footer>
+
+  <script src="../js/app.js"></script>
+  <script src="../js/proyectos.js"></script>
+</body>
+</html>

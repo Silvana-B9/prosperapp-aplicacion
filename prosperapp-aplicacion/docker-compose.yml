@@ -1,0 +1,16 @@
+services:
+  postgres:
+    image: postgres:16
+    container_name: prosperapp-db
+    environment:
+      POSTGRES_DB: prosperapp_db
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: rodrigo123
+    ports:
+      - "5433:5432"
+    volumes:
+      - ./src/main/resources/db/tablastrabajofinal.sql:/docker-entrypoint-initdb.d/01_esquema.sql
+      - prosperapp_datos:/var/lib/postgresql/data
+
+volumes:
+  prosperapp_datos:
